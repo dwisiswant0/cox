@@ -13,7 +13,7 @@ Cox is [bluemonday](https://github.com/microcosm-cc/bluemonday)-wrapper to perfo
 It's fairly simple!
 
 ```console
-go get github.com/dwisiswant0/cox
+go get -u github.com/dwisiswant0/cox
 ```
 
 ## Usage
