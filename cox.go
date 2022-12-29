@@ -3,14 +3,14 @@ package cox
 import (
 	"reflect"
 
-	"dw1.io/cox/policy"
+	"github.com/dwisiswant0/cox/policy"
 	"github.com/microcosm-cc/bluemonday"
 )
 
 // Clean implements deep-clean and/or sanitization of interface.
 // 
 // `i` is your interface.
-// `p` as kind of policy. See [policy](https://pkg.go.dev/dw1.io/cox/policy).
+// `p` as kind of policy. See [policy](https://pkg.go.dev/github.com/dwisiswant0/cox/policy).
 // `a` for additional policies. See [bluemonday documentation index](https://pkg.go.dev/github.com/microcosm-cc/bluemonday#pkg-index) as a reference for any methods that support policy returns.
 func Clean[T any](i T, p policy.Kind, a ...*bluemonday.Policy) T {
 	deepClean(reflect.ValueOf(&i), setPolicy(p, a))

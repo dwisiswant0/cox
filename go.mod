@@ -1,4 +1,4 @@
-module dw1.io/cox
+module github.com/dwisiswant0/cox
 
 go 1.18
 

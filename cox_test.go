@@ -3,7 +3,7 @@ package cox
 import (
 	"testing"
 
-	"dw1.io/cox/policy"
+	"github.com/dwisiswant0/cox/policy"
 	"github.com/stretchr/testify/assert"
 )
 

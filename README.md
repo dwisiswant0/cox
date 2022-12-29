@@ -1,6 +1,6 @@
 # cox
 
-[![GoDoc](https://godoc.org/dw1.io/cox?status.svg)](https://pkg.go.dev/dw1.io/cox)
+[![GoDoc](https://godoc.org/github.com/dwisiswant0/cox?status.svg)](https://pkg.go.dev/github.com/dwisiswant0/cox)
 
 Cox is [bluemonday](https://github.com/microcosm-cc/bluemonday)-wrapper to perform a deep-clean and/or sanitization of <i>(nested-)</i>interfaces from HTML to prevent XSS payloads. It'll sanitize all fields in the structure, supports fields with _(slice of, and/or just)_ `string` and `byte` types.
 
@@ -13,7 +13,7 @@ Cox is [bluemonday](https://github.com/microcosm-cc/bluemonday)-wrapper to perfo
 It's fairly simple!
 
 ```console
-go get dw1.io/cox
+go get github.com/dwisiswant0/cox
 ```
 
 ## Usage
@@ -22,8 +22,8 @@ You can import `cox` using a basic statement:
 
 ```golang
 import (
-	"dw1.io/cox"
-	"dw1.io/cox/policy"
+	"github.com/dwisiswant0/cox"
+	"github.com/dwisiswant0/cox/policy"
 )
 ```
 
@@ -35,7 +35,7 @@ t = cox.Clean[T](t, policy.Strict) // Sanitizing with strict policy, returning t
 // For pointer, use cox.CleanPtr method.
 ```
 
-> Kind of policy: `Blank`, `UGC` and `Strict`. See [policy](https://pkg.go.dev/dw1.io/cox/policy).
+> Kind of policy: `Blank`, `UGC` and `Strict`. See [policy](https://pkg.go.dev/github.com/dwisiswant0/cox/policy).
 
 #### Additional policies
 

@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"dw1.io/cox"
-	"dw1.io/cox/policy"
+	"github.com/dwisiswant0/cox"
+	"github.com/dwisiswant0/cox/policy"
 )
 
 // Info ...
